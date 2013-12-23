@@ -1,5 +1,5 @@
 package factorial20;
-use 5.16.0;
+use 5.12.0;
 
 sub main {
     my $result = 1;

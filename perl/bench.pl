@@ -1,5 +1,5 @@
 package bench;
-use 5.16.0;
+use 5.12.0;
 use Module::Load;
 use Time::HiRes qw(gettimeofday);
 
