@@ -3,7 +3,7 @@ class Object_method_call {
         foo = new Foo();
     }
 
-    static Foo foo;
+    final static Foo foo;
 
     public static void main() {
         foo.objectMethod();
