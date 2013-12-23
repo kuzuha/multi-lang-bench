@@ -9,6 +9,8 @@ class Bench {
         Class script = Class.forName(target);
         @SuppressWarnings("unchecked")
         final Method main = script.getMethod("main");
+        main.invoke(null); // load class files
+
         final long start = Calendar.getInstance().getTimeInMillis();
         for (long i = 0; i < count; ++i) {
             main.invoke(null);
