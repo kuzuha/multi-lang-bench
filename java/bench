@@ -1,0 +1,5 @@
+#!/bin/sh
+cwd=`dirname "${0}"`
+rm -rf "$cwd/src/*.class";
+javac "$cwd/src/"*.java
+java -classpath "$cwd/src/" Bench $@
