@@ -1,0 +1,3 @@
+#!/bin/sh
+cwd=`dirname "${0}"`
+pypy "$cwd/bench.py" $@
