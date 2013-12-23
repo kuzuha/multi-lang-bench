@@ -1,4 +1,5 @@
 *.pyc
 java/src/*.class
+scala/src/*.class
 *.iml
 *.idea

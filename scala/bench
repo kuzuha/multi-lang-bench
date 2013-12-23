@@ -1,0 +1,6 @@
+#!/bin/sh
+cwd=`dirname "${0}"`
+rm -rf "$cwd/src/"*.class;
+javac "$cwd/src/"*.java
+scalac -d "$cwd/src" "$cwd/src/"*.scala
+java -classpath "$SCALA_HOME/lib/*:$cwd/src/" Bench $@
