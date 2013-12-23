@@ -19,11 +19,11 @@ class Bench {
 
     public static void main(String[] args) throws Exception {
         final long count = Long.parseLong(args[0]);
-        //final double blank = execute("blank", count);
-        final double blank = 0;
+        final double blank = execute("blank", count);
         for (int i = 1; i < args.length; ++i) {
             final String target = args[i];
-            final double time = execute(target, count) - blank;
+            double time = execute(target, count) - blank;
+            time = time > 0 ? time : 0;
             System.out.println("# " + target);
             System.out.println("## " + time);
         }
